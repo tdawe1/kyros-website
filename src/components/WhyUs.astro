@@ -41,44 +41,44 @@
   }
 
   .section-description {
-    font-size: 1.5rem;
+    font-size: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
     color: var(--text-dark);
     text-align: left;
-    margin-bottom: 4rem;
-    max-width: 600px;
+    margin-bottom: 4.2rem; /* 5% larger: 4rem to 4.2rem */
+    max-width: 630px; /* 5% larger: 600px to 630px */
     line-height: 1.6;
   }
 
   .value-props-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2.5rem;
-    margin-top: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(262.5px, 1fr)); /* 5% larger: 250px to 262.5px */
+    gap: 2.625rem; /* 5% larger: 2.5rem to 2.625rem */
+    margin-top: 3.15rem; /* 5% larger: 3rem to 3.15rem */
   }
 
   .value-prop {
     text-align: left;
-    padding: 2rem;
+    padding: 2.1rem; /* 5% larger: 2rem to 2.1rem */
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 8.4px; /* 5% larger: 8px to 8.4px */
+    box-shadow: 0 4.2px 21px rgba(0, 0, 0, 0.08); /* 5% larger shadows */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .value-prop:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    transform: translateY(-5.25px); /* 5% larger: -5px to -5.25px */
+    box-shadow: 0 8.4px 31.5px rgba(0, 0, 0, 0.12); /* 5% larger shadows */
   }
 
   .value-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.625rem; /* 5% larger: 2.5rem to 2.625rem */
+    margin-bottom: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
     display: block;
   }
 
   .value-prop h3 {
     text-align: left;
-    margin-bottom: 1rem;
+    margin-bottom: 1.05rem; /* 5% larger: 1rem to 1.05rem */
   }
 
   .value-prop p {
@@ -90,22 +90,22 @@
 
   @media (max-width: 768px) {
     .section-description {
-      font-size: 1.1rem;
-      margin-bottom: 3rem;
+      font-size: 1.155rem; /* 5% larger: 1.1rem to 1.155rem */
+      margin-bottom: 3.15rem; /* 5% larger: 3rem to 3.15rem */
     }
 
     .value-props-grid {
       grid-template-columns: 1fr;
-      gap: 2rem;
+      gap: 2.1rem; /* 5% larger: 2rem to 2.1rem */
     }
 
     .value-prop {
-      padding: 1.5rem;
+      padding: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
     }
 
     .value-icon {
-      font-size: 2rem;
-      margin-bottom: 1rem;
+      font-size: 2.1rem; /* 5% larger: 2rem to 2.1rem */
+      margin-bottom: 1.05rem; /* 5% larger: 1rem to 1.05rem */
     }
   }
 </style>

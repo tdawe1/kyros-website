@@ -41,57 +41,57 @@
   }
 
   .section-description {
-    font-size: 1.5rem;
+    font-size: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
     color: var(--text-dark);
     text-align: left;
-    margin-bottom: 5rem;
-    max-width: 800px;
+    margin-bottom: 5.25rem; /* 5% larger: 5rem to 5.25rem */
+    max-width: 840px; /* 5% larger: 800px to 840px */
     line-height: 1.6;
   }
 
   .process-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3rem;
-    margin-top: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr)); /* 5% larger: 300px to 315px */
+    gap: 3.15rem; /* 5% larger: 3rem to 3.15rem */
+    margin-top: 4.2rem; /* 5% larger: 4rem to 4.2rem */
     justify-items: start;
   }
 
   .step {
     text-align: left;
-    padding: 3rem;
+    padding: 3.15rem; /* 5% larger: 3rem to 3.15rem */
     background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12.6px; /* 5% larger: 12px to 12.6px */
+    box-shadow: 0 6.3px 31.5px rgba(0, 0, 0, 0.1); /* 5% larger shadows */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-height: 300px;
+    min-height: 315px; /* 5% larger: 300px to 315px */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
 
   .step:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8.4px); /* 5% larger: -8px to -8.4px */
+    box-shadow: 0 12.6px 42px rgba(0, 0, 0, 0.15); /* 5% larger shadows */
   }
 
   .icon-placeholder {
-    width: 80px;
-    height: 80px;
+    width: 84px; /* 5% larger: 80px to 84px */
+    height: 84px; /* 5% larger: 80px to 84px */
     background: var(--accent-blue);
     color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 2.1rem; /* 5% larger: 2rem to 2.1rem */
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 2.1rem; /* 5% larger: 2rem to 2.1rem */
   }
 
   .step h3 {
     text-align: left;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
   }
 
   .step p {
@@ -99,53 +99,53 @@
     color: var(--text-dark);
     line-height: 1.7;
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1.155rem; /* 5% larger: 1.1rem to 1.155rem */
   }
 
   @media (min-width: 1920px) {
     .process-grid {
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-      gap: 4rem;
+      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); /* 5% larger: 400px to 420px */
+      gap: 4.2rem; /* 5% larger: 4rem to 4.2rem */
     }
 
     .step {
-      padding: 4rem;
-      min-height: 350px;
+      padding: 4.2rem; /* 5% larger: 4rem to 4.2rem */
+      min-height: 367.5px; /* 5% larger: 350px to 367.5px */
     }
 
     .icon-placeholder {
-      width: 100px;
-      height: 100px;
-      font-size: 2.5rem;
+      width: 105px; /* 5% larger: 100px to 105px */
+      height: 105px; /* 5% larger: 100px to 105px */
+      font-size: 2.625rem; /* 5% larger: 2.5rem to 2.625rem */
     }
 
     .section-description {
-      font-size: 1.75rem;
-      margin-bottom: 6rem;
+      font-size: 1.8375rem; /* 5% larger: 1.75rem to 1.8375rem */
+      margin-bottom: 6.3rem; /* 5% larger: 6rem to 6.3rem */
     }
   }
 
   @media (max-width: 768px) {
     .section-description {
-      font-size: 1.1rem;
-      margin-bottom: 3rem;
+      font-size: 1.155rem; /* 5% larger: 1.1rem to 1.155rem */
+      margin-bottom: 3.15rem; /* 5% larger: 3rem to 3.15rem */
     }
 
     .process-grid {
       grid-template-columns: 1fr;
-      gap: 2rem;
+      gap: 2.1rem; /* 5% larger: 2rem to 2.1rem */
     }
 
     .step {
-      padding: 1.5rem;
+      padding: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
       min-height: auto;
     }
 
     .icon-placeholder {
-      width: 45px;
-      height: 45px;
-      font-size: 1.1rem;
-      margin-bottom: 1rem;
+      width: 47.25px; /* 5% larger: 45px to 47.25px */
+      height: 47.25px; /* 5% larger: 45px to 47.25px */
+      font-size: 1.155rem; /* 5% larger: 1.1rem to 1.155rem */
+      margin-bottom: 1.05rem; /* 5% larger: 1rem to 1.05rem */
     }
   }
 </style>
