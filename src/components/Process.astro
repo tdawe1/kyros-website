@@ -37,15 +37,7 @@
 
 <style>
   .process {
-    background-color: white;
-  }
-
-  .process h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--text-dark);
-    text-align: left;
-    margin-bottom: 1rem;
+    background-color: var(--bg-light);
   }
 
   .section-description {
@@ -66,15 +58,16 @@
 
   .step {
     text-align: left;
-    padding: 2rem 1.5rem;
-    background: var(--bg-light);
+    padding: 2rem;
+    background-color: white;
     border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .step:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
   }
 
   .icon-placeholder {
@@ -91,13 +84,6 @@
     margin-bottom: 1.5rem;
   }
 
-  .step h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--text-dark);
-    margin-bottom: 1rem;
-  }
-
   .step p {
     color: var(--text-dark);
     line-height: 1.6;
@@ -105,10 +91,6 @@
   }
 
   @media (max-width: 768px) {
-    .process h2 {
-      font-size: 2rem;
-    }
-
     .section-description {
       font-size: 1.1rem;
       margin-bottom: 3rem;
@@ -120,7 +102,7 @@
     }
 
     .step {
-      padding: 1.5rem 1rem;
+      padding: 1.5rem;
     }
 
     .icon-placeholder {
@@ -128,10 +110,6 @@
       height: 45px;
       font-size: 1.1rem;
       margin-bottom: 1rem;
-    }
-
-    .step h3 {
-      font-size: 1.25rem;
     }
   }
 </style>
