@@ -49,10 +49,11 @@
 
   .why-us-layout {
     position: relative;
-    min-height: 800px;
+    min-height: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 63px 0;
   }
 
   .why-us-text {
@@ -60,6 +61,10 @@
     max-width: 840px;
     z-index: 2;
     position: relative;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 3.15rem;
+    border-radius: 15.75px;
+    box-shadow: 0 4.2px 21px rgba(0, 0, 0, 0.1);
   }
 
   .why-us-text h2 {
@@ -104,23 +109,23 @@
   }
 
   .value-prop.top-left {
-    top: 10%;
-    left: 5%;
+    top: 0;
+    left: 0;
   }
 
   .value-prop.top-right {
-    top: 15%;
-    right: 8%;
+    top: 0;
+    right: 0;
   }
 
   .value-prop.bottom-left {
-    bottom: 20%;
-    left: 10%;
+    bottom: 0;
+    left: 0;
   }
 
   .value-prop.bottom-right {
-    bottom: 15%;
-    right: 5%;
+    bottom: 0;
+    right: 0;
   }
 
   .icon-placeholder {
@@ -167,10 +172,16 @@
     .value-props-container {
       position: static;
       margin-top: 3.15rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.625rem;
     }
 
     .why-us-text {
       margin-bottom: 3.15rem;
+      background: transparent;
+      padding: 0;
+      box-shadow: none;
     }
   }
 
