@@ -5,10 +5,10 @@
 <header>
   <nav>
     <div class="logo">
-      <h1>Bridge & Signal</h1>
+      <h1>Branch & Signal</h1>
     </div>
     <ul class="nav-links">
-      <li><a href="#process">Method</a></li>
+      <li><a href="#process">Our Process</a></li>
       <li><a href="#case-studies">Case Studies</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="#contact" class="nav-cta">Book A Call</a></li>
@@ -18,9 +18,12 @@
   <div class="section-container">
     <div class="hero-grid">
       <div class="hero-content">
-        <h2>Connecting Ideas and People</h2>
-        <p>We bridge the gap between vision and execution, creating meaningful connections that drive success.</p>
-        <a href="#process" class="cta-button">Learn More</a>
+        <h2>Automation without the bloat. ROI without the gamble.</h2>
+        <p>We help UK SMEs cut bottlenecks, save hours, and unlock growth with lightweight, bespoke automation — built in weeks, not years. No jargon, no lock-in, no wasted spend.</p>
+        <div class="hero-cta-buttons">
+          <a href="#contact" class="cta-button primary">Book Your Free Discovery Call</a>
+          <a href="#case-studies" class="cta-button secondary">See Real Results</a>
+        </div>
       </div>
       <div class="hero-visual">
         <!-- Placeholder for banner image -->
@@ -86,18 +89,18 @@
   }
 
   .nav-cta {
-    background: linear-gradient(135deg, var(--accent-orange) 0%, var(--accent-purple) 100%);
+    background: linear-gradient(135deg, var(--accent-blue) 0%, var(--electric-blue-dark) 100%);
     color: white !important;
     padding: 0.7875rem 1.575rem !important; /* 5% larger: 0.75rem 1.5rem to 0.7875rem 1.575rem */
     border-radius: 8.4px; /* 5% larger: 8px to 8.4px */
     font-weight: 600;
-    box-shadow: 0 4.2px 15.75px rgba(255, 107, 53, 0.3); /* 5% larger shadows */
+    box-shadow: 0 4.2px 15.75px rgba(0, 123, 255, 0.3); /* 5% larger shadows */
     transition: all 0.3s ease;
   }
 
   .nav-cta:hover {
     transform: translateY(-3.15px) !important; /* 5% larger: -3px to -3.15px */
-    box-shadow: 0 6.3px 21px rgba(255, 107, 53, 0.4); /* 5% larger shadows */
+    box-shadow: 0 6.3px 21px rgba(0, 123, 255, 0.4); /* 5% larger shadows */
     color: white !important;
   }
 
@@ -130,6 +133,12 @@
     text-align: left;
   }
 
+  .hero-cta-buttons {
+    display: flex;
+    gap: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
+    flex-wrap: wrap;
+  }
+
   .hero-visual {
     height: 420px; /* 5% larger: 400px to 420px */
     background: linear-gradient(135deg, var(--accent-blue) 0%, #0056b3 100%);
@@ -145,21 +154,36 @@
 
   .cta-button {
     display: inline-block;
-    background-color: var(--accent-blue);
-    color: white;
-    padding: 1.05rem 2.1rem; /* 5% larger: 1rem 2rem to 1.05rem 2.1rem */
     text-decoration: none;
     border-radius: 8.4px; /* 5% larger: 8px to 8.4px */
     font-weight: 600;
     font-size: 1.155rem; /* 5% larger: 1.1rem to 1.155rem */
     transition: all 0.3s ease;
+    padding: 1.05rem 2.1rem; /* 5% larger: 1rem 2rem to 1.05rem 2.1rem */
+  }
+
+  .cta-button.primary {
+    background-color: var(--accent-blue);
+    color: white;
     box-shadow: 0 4.2px 15.75px rgba(0, 123, 255, 0.3); /* 5% larger shadows */
   }
 
-  .cta-button:hover {
+  .cta-button.primary:hover {
     background-color: #0056b3;
     transform: translateY(-2.1px); /* 5% larger: -2px to -2.1px */
     box-shadow: 0 6.3px 21px rgba(0, 123, 255, 0.4); /* 5% larger shadows */
+  }
+
+  .cta-button.secondary {
+    background-color: transparent;
+    color: var(--accent-blue);
+    border: 2px solid var(--accent-blue);
+  }
+
+  .cta-button.secondary:hover {
+    background-color: var(--accent-blue);
+    color: white;
+    transform: translateY(-2.1px); /* 5% larger: -2px to -2.1px */
   }
 
   @media (max-width: 768px) {
@@ -190,13 +214,18 @@
     }
 
     .hero-content h2 {
-      font-size: 2.625rem; /* 5% larger: 2.5rem to 2.625rem */
+      font-size: 3.15rem; /* 5% larger: 3rem to 3.15rem */
       margin-bottom: 1.05rem; /* 5% larger: 1rem to 1.05rem */
     }
 
     .hero-content p {
-      font-size: 1.155rem; /* 5% larger: 1.1rem to 1.155rem */
+      font-size: 1.26rem; /* 5% larger: 1.2rem to 1.26rem */
       margin-bottom: 2.1rem; /* 5% larger: 2rem to 2.1rem */
+    }
+
+    .hero-cta-buttons {
+      flex-direction: column;
+      gap: 1.05rem; /* 5% larger: 1rem to 1.05rem */
     }
 
     .hero-visual {
@@ -207,6 +236,7 @@
     .cta-button {
       padding: 0.91875rem 1.8375rem; /* 5% larger: 0.875rem 1.75rem to 0.91875rem 1.8375rem */
       font-size: 1.05rem; /* 5% larger: 1rem to 1.05rem */
+      text-align: center;
     }
   }
 </style>

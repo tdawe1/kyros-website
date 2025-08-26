@@ -1,25 +1,18 @@
 ---
-// Final Call-to-Action component
+// Final CTA component for the website
 ---
 
-<section class="final-cta">
+<section id="contact" class="final-cta section-animate">
   <div class="section-container">
-    <h2>Ready to Bridge the Gap?</h2>
-    <p>Let's work together to turn your vision into reality. We're here to help you create meaningful connections and achieve your goals.</p>
+    <h2>Ready for clarity and ROI?</h2>
+    <p class="cta-description">Book a no-obligation Discovery Call. We'll map your workflows, show you where automation pays back, and if it's not worth it — you walk away free.</p>
     
     <div class="cta-actions">
-      <a href="#contact" class="primary-cta">Get Started Today</a>
-      <a href="#process" class="secondary-cta">Learn More</a>
+      <a href="#contact" class="cta-button primary">Book a Free Discovery Call</a>
     </div>
     
     <div class="trust-indicators">
-      <p>Trusted by organizations worldwide</p>
-      <div class="trust-logos">
-        <!-- Placeholder for trust logos -->
-        <span class="trust-logo">Company A</span>
-        <span class="trust-logo">Company B</span>
-        <span class="trust-logo">Company C</span>
-      </div>
+      <p>No jargon. No lock-in. No wasted spend.</p>
     </div>
   </div>
 </section>
@@ -31,113 +24,60 @@
     text-align: center;
   }
 
-  .final-cta h2 {
-    text-align: center;
+  .cta-description {
+    font-size: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
     color: white;
-  }
-
-  .final-cta p {
-    font-size: 1.25rem;
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 3rem;
-    line-height: 1.6;
     text-align: center;
+    margin-bottom: 3.15rem; /* 5% larger: 3rem to 3.15rem */
+    max-width: 840px; /* 5% larger: 800px to 840px */
+    line-height: 1.6;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .cta-actions {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    margin-bottom: 4rem;
-    flex-wrap: wrap;
+    margin-bottom: 3.15rem; /* 5% larger: 3rem to 3.15rem */
   }
 
-  .primary-cta {
+  .cta-button.primary {
     display: inline-block;
-    background-color: var(--accent-blue);
+    background: linear-gradient(135deg, var(--accent-blue) 0%, var(--electric-blue-dark) 100%);
     color: white;
-    padding: 1rem 2rem;
+    padding: 1.26rem 2.52rem; /* 5% larger: 1.2rem 2.4rem to 1.26rem 2.52rem */
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 8.4px; /* 5% larger: 8px to 8.4px */
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.26rem; /* 5% larger: 1.2rem to 1.26rem */
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 4.2px 15.75px rgba(0, 123, 255, 0.3); /* 5% larger shadows */
   }
 
-  .primary-cta:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
-  }
-
-  .secondary-cta {
-    display: inline-block;
-    background-color: transparent;
-    color: white;
-    padding: 1rem 2rem;
-    text-decoration: none;
-    border: 2px solid white;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-  }
-
-  .secondary-cta:hover {
-    background-color: white;
-    color: var(--text-dark);
-  }
-
-  .trust-indicators {
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    padding-top: 3rem;
+  .cta-button.primary:hover {
+    transform: translateY(-2.1px); /* 5% larger: -2px to -2.1px */
+    box-shadow: 0 6.3px 21px rgba(0, 123, 255, 0.4); /* 5% larger shadows */
   }
 
   .trust-indicators p {
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 1.5rem;
+    font-size: 1.26rem; /* 5% larger: 1.2rem to 1.26rem */
+    color: rgba(255, 255, 255, 0.8);
     text-align: center;
-  }
-
-  .trust-logos {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .trust-logo {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 0.9rem;
+    margin: 0;
     font-weight: 500;
   }
 
   @media (max-width: 768px) {
-    .final-cta p {
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
+    .cta-description {
+      font-size: 1.26rem; /* 5% larger: 1.2rem to 1.26rem */
+      margin-bottom: 2.625rem; /* 5% larger: 2.5rem to 2.625rem */
     }
 
-    .cta-actions {
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 3rem;
+    .cta-button.primary {
+      padding: 1.05rem 2.1rem; /* 5% larger: 1rem 2rem to 1.05rem 2.1rem */
+      font-size: 1.155rem; /* 5% larger: 1.1rem to 1.155rem */
     }
 
-    .primary-cta,
-    .secondary-cta {
-      width: 100%;
-      max-width: 300px;
-      text-align: center;
-      padding: 0.875rem 1.75rem;
-      font-size: 1rem;
-    }
-
-    .trust-logos {
-      gap: 1.5rem;
+    .trust-indicators p {
+      font-size: 1.155rem; /* 5% larger: 1.1rem to 1.155rem */
     }
   }
 </style>

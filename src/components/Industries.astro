@@ -1,0 +1,115 @@
+---
+// Industries component showcasing where we deliver the biggest wins
+---
+
+<section class="industries section-animate">
+  <div class="section-container">
+    <h2>Where we deliver the biggest wins.</h2>
+    <p class="section-description">We specialize in helping UK SMEs across these key sectors cut bottlenecks and unlock growth.</p>
+    
+    <div class="industries-grid">
+      <div class="industry-card card-animate">
+        <div class="industry-icon">🏭</div>
+        <h3>Distributors & Wholesalers</h3>
+        <p>Faster, error-free quoting and streamlined order management workflows.</p>
+      </div>
+      
+      <div class="industry-card card-animate">
+        <div class="industry-icon">📊</div>
+        <h3>Agencies & Marketing Teams</h3>
+        <p>Automated reporting, insights generation, and data consolidation.</p>
+      </div>
+      
+      <div class="industry-card card-animate">
+        <div class="industry-icon">💼</div>
+        <h3>Professional Services</h3>
+        <p>Translation, finance, and admin tasks streamlined for efficiency.</p>
+      </div>
+      
+      <div class="industry-card card-animate">
+        <div class="industry-icon">⚙️</div>
+        <h3>Light Manufacturing</h3>
+        <p>Order management and supplier workflows automated for growth.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .industries {
+    background-color: white;
+  }
+
+  .section-description {
+    font-size: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
+    color: var(--text-dark);
+    text-align: left;
+    margin-bottom: 5.25rem; /* 5% larger: 5rem to 5.25rem */
+    max-width: 840px; /* 5% larger: 800px to 840px */
+    line-height: 1.6;
+  }
+
+  .industries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3.15rem; /* 5% larger: 3rem to 3.15rem */
+    margin-top: 4.2rem; /* 5% larger: 4rem to 4.2rem */
+  }
+
+  .industry-card {
+    text-align: left;
+    padding: 2.625rem; /* 5% larger: 2.5rem to 2.625rem */
+    background-color: var(--bg-light);
+    border-radius: 12.6px; /* 5% larger: 12px to 12.6px */
+    box-shadow: 0 4.2px 21px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+  }
+
+  .industry-card:hover {
+    transform: translateY(-5.25px); /* 5% larger: -5px to -5.25px */
+    box-shadow: 0 8.4px 31.5px rgba(0, 123, 255, 0.15);
+    border-color: var(--accent-blue);
+  }
+
+  .industry-icon {
+    font-size: 3.15rem; /* 5% larger: 3rem to 3.15rem */
+    margin-bottom: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
+    display: block;
+  }
+
+  .industry-card h3 {
+    text-align: left;
+    margin-bottom: 1.05rem; /* 5% larger: 1rem to 1.05rem */
+    color: var(--text-dark);
+  }
+
+  .industry-card p {
+    text-align: left;
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin: 0;
+    font-size: 1.155rem; /* 5% larger: 1.1rem to 1.155rem */
+  }
+
+  @media (max-width: 768px) {
+    .section-description {
+      font-size: 1.155rem; /* 5% larger: 1.1rem to 1.155rem */
+      margin-bottom: 3.75rem; /* 5% larger: 3rem to 3.75rem */
+    }
+
+    .industries-grid {
+      grid-template-columns: 1fr;
+      gap: 2.1rem; /* 5% larger: 2rem to 2.1rem */
+    }
+
+    .industry-card {
+      padding: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
+    }
+
+    .industry-icon {
+      font-size: 2.625rem; /* 5% larger: 2.5rem to 2.625rem */
+      margin-bottom: 1.05rem; /* 5% larger: 1rem to 1.05rem */
+    }
+  }
+</style>

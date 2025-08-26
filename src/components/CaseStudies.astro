@@ -4,39 +4,42 @@
 
 <section id="case-studies" class="case-studies section-animate">
   <div class="section-container">
-    <h2>Case Studies</h2>
-    <p class="section-description">See how we've helped organizations achieve their goals and create meaningful impact.</p>
+    <h2>Real-World Results</h2>
+    <p class="section-description">See how we've helped UK SMEs cut bottlenecks and unlock growth with practical automation.</p>
     
     <div class="case-studies-grid">
       <article class="case-study card-animate">
         <div class="case-study-content">
-          <h3>Tech Startup Growth</h3>
-          <p>Helped a promising tech startup scale from 10 to 100 employees while maintaining their innovative culture and mission.</p>
+          <h3>Translation Firm</h3>
+          <p class="bottleneck"><strong>The Bottleneck:</strong> Time-sensitive jobs were slipping through cracks.</p>
+          <p class="fix"><strong>The Fix:</strong> A Python agent that monitored feeds and auto-accepted the right jobs.</p>
           <div class="case-study-metrics">
-            <span class="metric highlight">300% Growth</span>
-            <span class="metric highlight">18 Months</span>
+            <span class="metric highlight">4.5× Revenue Boost</span>
+            <span class="metric highlight">Work Previously Missing</span>
           </div>
         </div>
       </article>
       
       <article class="case-study card-animate">
         <div class="case-study-content">
-          <h3>Non-Profit Transformation</h3>
-          <p>Guided a non-profit organization through a complete digital transformation, increasing their reach by 500%.</p>
+          <h3>Marketing Team</h3>
+          <p class="bottleneck"><strong>The Bottleneck:</strong> 10+ hours a week wasted wrangling spreadsheets.</p>
+          <p class="fix"><strong>The Fix:</strong> A lightweight insights hub that automated data consolidation and surfaced AI-powered recommendations.</p>
           <div class="case-study-metrics">
-            <span class="metric highlight">500% Reach</span>
-            <span class="metric highlight">12 Months</span>
+            <span class="metric highlight">10+ Hours Reclaimed</span>
+            <span class="metric highlight">Weekly Strategic Work</span>
           </div>
         </div>
       </article>
       
       <article class="case-study card-animate">
         <div class="case-study-content">
-          <h3>Corporate Innovation</h3>
-          <p>Facilitated innovation workshops for a Fortune 500 company, resulting in 15 new product concepts and improved team collaboration.</p>
+          <h3>UK Distributor</h3>
+          <p class="bottleneck"><strong>The Bottleneck:</strong> Slow, error-prone quoting cost sales.</p>
+          <p class="fix"><strong>The Fix:</strong> A quoting tool that matched inventory and supplier data instantly.</p>
           <div class="case-study-metrics">
-            <span class="metric highlight">15 Concepts</span>
-            <span class="metric highlight">6 Months</span>
+            <span class="metric highlight">70% Faster Quotes</span>
+            <span class="metric highlight">Errors Nearly Eliminated</span>
           </div>
         </div>
       </article>
@@ -88,13 +91,20 @@
     margin-bottom: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
   }
 
-  .case-study p {
+  .bottleneck, .fix {
     text-align: left;
     color: var(--text-dark);
     line-height: 1.7;
-    margin-bottom: 2.1rem; /* 5% larger: 2rem to 2.1rem */
+    margin-bottom: 1.05rem; /* 5% larger: 1rem to 1.05rem */
     font-size: 1.155rem; /* 5% larger: 1.1rem to 1.155rem */
-    flex-grow: 1;
+  }
+
+  .bottleneck {
+    color: #dc3545;
+  }
+
+  .fix {
+    color: #28a745;
   }
 
   .case-study-metrics {
@@ -135,7 +145,7 @@
       margin-bottom: 6.3rem; /* 5% larger: 6rem to 6.3rem */
     }
 
-    .case-study p {
+    .bottleneck, .fix {
       font-size: 1.26rem; /* 5% larger: 1.2rem to 1.26rem */
     }
 
