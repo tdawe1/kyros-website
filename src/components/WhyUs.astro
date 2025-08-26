@@ -48,23 +48,26 @@
   }
 
   .why-us-layout {
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2.625rem;
     min-height: 1000px;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
     padding: 63px 0;
   }
 
   .why-us-text {
+    grid-column: 2;
+    grid-row: 2;
     text-align: center;
     max-width: 840px;
-    z-index: 2;
-    position: relative;
     background: rgba(255, 255, 255, 0.9);
     padding: 3.15rem;
     border-radius: 15.75px;
     box-shadow: 0 4.2px 21px rgba(0, 0, 0, 0.1);
+    z-index: 2;
   }
 
   .why-us-text h2 {
@@ -83,24 +86,17 @@
   }
 
   .value-props-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
+    display: contents;
   }
 
   .value-prop {
-    position: absolute;
-    width: 280px;
-    max-width: 280px;
     background: white;
     padding: 2.625rem;
     border-radius: 12.6px;
     box-shadow: 0 4.2px 21px rgba(0, 0, 0, 0.1);
-    pointer-events: auto;
     transition: all 0.3s ease;
+    width: 280px;
+    max-width: 280px;
   }
 
   .value-prop:hover {
@@ -109,23 +105,31 @@
   }
 
   .value-prop.top-left {
-    top: 0;
-    left: 0;
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: end;
+    align-self: end;
   }
 
   .value-prop.top-right {
-    top: 0;
-    right: 0;
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: start;
+    align-self: end;
   }
 
   .value-prop.bottom-left {
-    bottom: 0;
-    left: 0;
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: end;
+    align-self: start;
   }
 
   .value-prop.bottom-right {
-    bottom: 0;
-    right: 0;
+    grid-column: 3;
+    grid-row: 3;
+    justify-self: start;
+    align-self: start;
   }
 
   .icon-placeholder {
