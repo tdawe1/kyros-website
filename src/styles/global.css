@@ -9,6 +9,8 @@
   --accent-blue: #007BFF;
   --accent-orange: #FF6B35;
   --accent-purple: #8B5CF6;
+  --electric-blue-light: #4DA6FF;
+  --electric-blue-dark: #0056B3;
 }
 
 /* Basic style reset */
@@ -98,13 +100,13 @@ p {
   }
 }
 
-/* Enhanced Floating Menu Styles - 5% LARGER */
+/* Enhanced Floating Menu Styles - ELECTRIC BLUE COLOR SCHEME */
 #menu-icon {
   position: fixed;
   top: 31.5px; /* 5% larger: 30px to 31.5px */
   right: 31.5px; /* 5% larger: 30px to 31.5px */
   z-index: 1000;
-  background: linear-gradient(135deg, var(--accent-orange) 0%, var(--accent-purple) 100%);
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--electric-blue-dark) 100%);
   color: white;
   border: none;
   border-radius: 50%;
@@ -112,7 +114,7 @@ p {
   height: 73.5px; /* 5% larger: 70px to 73.5px */
   font-size: 29.4px; /* 5% larger: 28px to 29.4px */
   cursor: pointer;
-  box-shadow: 0 6.3px 21px rgba(255, 107, 53, 0.4); /* 5% larger shadows */
+  box-shadow: 0 6.3px 21px rgba(0, 123, 255, 0.4); /* Electric blue shadow */
   opacity: 0;
   transform: translateY(-105px); /* 5% larger: -100px to -105px */
   transition: all 0.3s ease;
@@ -120,7 +122,7 @@ p {
 
 #menu-icon:hover {
   transform: scale(1.1);
-  box-shadow: 0 8.4px 26.25px rgba(255, 107, 53, 0.6); /* 5% larger shadows */
+  box-shadow: 0 8.4px 26.25px rgba(0, 123, 255, 0.6); /* Electric blue shadow */
 }
 
 #menu-icon.visible {
@@ -134,7 +136,7 @@ p {
   right: 0;
   width: 33.33vw;
   height: 100vh;
-  background: linear-gradient(135deg, var(--accent-purple) 0%, var(--accent-orange) 100%);
+  background: linear-gradient(135deg, var(--electric-blue-dark) 0%, var(--accent-blue) 100%);
   z-index: 999;
   display: flex;
   flex-direction: column;
