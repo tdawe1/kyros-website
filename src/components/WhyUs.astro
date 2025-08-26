@@ -4,38 +4,34 @@
 
 <section class="why-us section-animate">
   <div class="section-container">
-    <div class="why-us-layout">
-      <div class="why-us-text">
-        <h2>Clarity. Speed. Control.</h2>
-        <p class="section-description">
-          Most automation agencies push complexity. We do the opposite. Branch & Signal builds practical, no-nonsense tools that slot into your workflows, pay for themselves fast, and leave your team in control.
-        </p>
+    <h2>Clarity. Speed. Control.</h2>
+    <p class="section-description">
+      Most automation agencies push complexity. We do the opposite. Branch & Signal builds practical, no-nonsense tools that slot into your workflows, pay for themselves fast, and leave your team in control.
+    </p>
+    
+    <div class="value-props-grid">
+      <div class="value-prop card-animate">
+        <div class="icon-placeholder">💰</div>
+        <h3>ROI First</h3>
+        <p>If it doesn't save money or time, we don't build it. Every solution is designed to deliver measurable returns quickly.</p>
       </div>
       
-      <div class="value-props-container">
-        <div class="value-prop top-left">
-          <div class="icon-placeholder">💰</div>
-          <h3>ROI First</h3>
-          <p>If it doesn't save money or time, we don't build it. Every solution is designed to deliver measurable returns quickly.</p>
-        </div>
-        
-        <div class="value-prop top-right">
-          <div class="icon-placeholder">⚡</div>
-          <h3>Lightweight, No Bloat</h3>
-          <p>Bespoke tools designed to fit your exact process, not the other way around. No unnecessary complexity or features.</p>
-        </div>
-        
-        <div class="value-prop bottom-left">
-          <div class="icon-placeholder">🔓</div>
-          <h3>Enablement, Not Dependency</h3>
-          <p>Clear guides and playbooks so your team can run with confidence — no vendor lock-in or hidden dependencies.</p>
-        </div>
-        
-        <div class="value-prop bottom-right">
-          <div class="icon-placeholder">🎯</div>
-          <h3>Risk-Free Discovery</h3>
-          <p>Our Discovery Sprint identifies ROI opportunities. If we don't find any, you don't pay. Zero risk, all reward.</p>
-        </div>
+      <div class="value-prop card-animate">
+        <div class="icon-placeholder">⚡</div>
+        <h3>Lightweight, No Bloat</h3>
+        <p>Bespoke tools designed to fit your exact process, not the other way around. No unnecessary complexity or features.</p>
+      </div>
+      
+      <div class="value-prop card-animate">
+        <div class="icon-placeholder">🔓</div>
+        <h3>Enablement, Not Dependency</h3>
+        <p>Clear guides and playbooks so your team can run with confidence — no vendor lock-in or hidden dependencies.</p>
+      </div>
+      
+      <div class="value-prop card-animate">
+        <div class="icon-placeholder">🎯</div>
+        <h3>Risk-Free Discovery</h3>
+        <p>Our Discovery Sprint identifies ROI opportunities. If we don't find any, you don't pay. Zero risk, all reward.</p>
       </div>
     </div>
   </div>
@@ -47,52 +43,36 @@
     padding: 126px 0;
   }
 
-  .why-us-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 1.05rem;
-    min-height: 800px;
-    align-items: center;
-    justify-items: center;
-    padding: 63px 0;
-  }
-
-  .why-us-text {
-    grid-column: 2;
-    grid-row: 2;
-    text-align: center;
-    max-width: 840px;
-    z-index: 2;
-  }
-
-  .why-us-text h2 {
+  .why-us h2 {
     font-size: clamp(2.625rem, 5.25vw, 4.725rem);
     font-weight: 700;
     color: var(--text-dark);
     margin-bottom: 2.625rem;
     line-height: 1.2;
+    text-align: left;
   }
 
   .section-description {
     font-size: clamp(1.26rem, 2.625vw, 1.575rem);
     line-height: 1.6;
     color: var(--text-dark);
-    margin-bottom: 0;
+    margin-bottom: 4.2rem;
+    max-width: 840px;
+    text-align: left;
   }
 
-  .value-props-container {
-    display: contents;
+  .value-props-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.625rem;
   }
 
   .value-prop {
     background: white;
-    padding: 2.1rem;
+    padding: 2.625rem;
     border-radius: 12.6px;
     box-shadow: 0 4.2px 21px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    width: 250px;
-    max-width: 250px;
   }
 
   .value-prop:hover {
@@ -128,71 +108,19 @@
     margin: 0;
   }
 
-  .value-prop.top-left {
-    grid-column: 1;
-    grid-row: 1;
-    justify-self: start;
-    align-self: start;
-  }
-
-  .value-prop.top-right {
-    grid-column: 3;
-    grid-row: 1;
-    justify-self: end;
-    align-self: start;
-  }
-
-  .value-prop.bottom-left {
-    grid-column: 1.2;
-    grid-row: 2.5;
-    justify-self: end;
-    align-self: end;
-  }
-
-  .value-prop.bottom-right {
-    grid-column: 2.8;
-    grid-row: 2.7;
-    justify-self: start;
-    align-self: end;
-  }
-
   @media (max-width: 768px) {
-    .why-us-layout {
-      min-height: auto;
-      padding: 63px 0;
+    .value-props-grid {
+      grid-template-columns: 1fr;
+      gap: 2.1rem;
     }
 
     .value-prop {
-      position: static;
-      width: 100%;
-      max-width: none;
-      margin-bottom: 2.625rem;
-    }
-
-    .value-props-container {
-      position: static;
-      margin-top: 3.15rem;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2.625rem;
-    }
-
-    .why-us-text {
-      margin-bottom: 3.15rem;
-      background: transparent;
-      padding: 0;
-      box-shadow: none;
+      padding: 2.1rem;
     }
   }
 
   @media (min-width: 1920px) {
-    .why-us-layout {
-      min-height: 1000px;
-    }
-
     .value-prop {
-      width: 350px;
-      max-width: 350px;
       padding: 3.15rem;
     }
 
