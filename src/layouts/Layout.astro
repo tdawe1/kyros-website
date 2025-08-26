@@ -21,6 +21,38 @@ const { title, description = "Bridge and Signal - Connecting ideas and people" }
     <link rel="stylesheet" href="/src/styles/global.css" />
   </head>
   <body>
+    <!-- Simplified Floating Menu -->
+    <button id="menu-icon" aria-label="Open Menu">☰</button>
+    <nav id="menu-overlay">
+      <a href="#process">Our Process</a>
+      <a href="#case-studies">Case Studies</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+    
     <slot />
+    
+    <!-- Simplified Menu JavaScript -->
+    <script>
+      const menuIcon = document.getElementById('menu-icon');
+      const menuOverlay = document.getElementById('menu-overlay');
+      const header = document.querySelector('header');
+
+      if (menuIcon && menuOverlay && header) {
+        // Toggle menu overlay
+        menuIcon.addEventListener('click', () => {
+          menuOverlay.classList.toggle('is-open');
+        });
+
+        // Show/hide menu icon on scroll
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > header.offsetHeight) {
+            menuIcon.classList.add('visible');
+          } else {
+            menuIcon.classList.remove('visible');
+          }
+        });
+      }
+    </script>
   </body>
 </html>
