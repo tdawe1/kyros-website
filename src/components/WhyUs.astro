@@ -1,0 +1,127 @@
+---
+// Why Us component showcasing our value propositions
+---
+
+<section class="why-us">
+  <div class="section-container">
+    <h2>Why Bridge & Signal?</h2>
+    <p class="section-description">We bring a unique combination of expertise, approach, and proven results that sets us apart.</p>
+    
+    <div class="value-props-grid">
+      <div class="value-prop">
+        <div class="value-icon">🎯</div>
+        <h3>Bespoke & Practical</h3>
+        <p>We deliver robust, tailored solutions that work in the real world, not just on paper.</p>
+      </div>
+      
+      <div class="value-prop">
+        <div class="value-icon">🔍</div>
+        <h3>Discovery-First</h3>
+        <p>We start by understanding your unique challenges before proposing any solutions.</p>
+      </div>
+      
+      <div class="value-prop">
+        <div class="value-icon">👨‍💼</div>
+        <h3>Founder-Led</h3>
+        <p>Our leadership team has built and scaled companies, so we understand your journey.</p>
+      </div>
+      
+      <div class="value-prop">
+        <div class="value-icon">📊</div>
+        <h3>Measurable ROI</h3>
+        <p>We focus on outcomes you can measure, ensuring every investment delivers value.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .why-us {
+    background-color: white;
+  }
+
+  .why-us h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  .section-description {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    text-align: left;
+    margin-bottom: 4rem;
+    max-width: 600px;
+    line-height: 1.6;
+  }
+
+  .value-props-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+  }
+
+  .value-prop {
+    text-align: left;
+    padding: 2rem 1.5rem;
+    background: var(--bg-light);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .value-prop:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .value-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+
+  .value-prop h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+  }
+
+  .value-prop p {
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .why-us h2 {
+      font-size: 2rem;
+    }
+
+    .section-description {
+      font-size: 1.1rem;
+      margin-bottom: 3rem;
+    }
+
+    .value-props-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .value-prop {
+      padding: 1.5rem 1rem;
+    }
+
+    .value-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .value-prop h3 {
+      font-size: 1.25rem;
+    }
+  }
+</style>

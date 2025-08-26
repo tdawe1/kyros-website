@@ -1,0 +1,157 @@
+---
+// Case Studies component showcasing our work
+---
+
+<section id="case-studies" class="case-studies">
+  <div class="section-container">
+    <h2>Case Studies</h2>
+    <p class="section-description">See how we've helped organizations achieve their goals and create meaningful impact.</p>
+    
+    <div class="case-studies-grid">
+      <article class="case-study">
+        <div class="case-study-content">
+          <h3>Tech Startup Growth</h3>
+          <p>Helped a promising tech startup scale from 10 to 100 employees while maintaining their innovative culture and mission.</p>
+          <div class="case-study-metrics">
+            <span class="metric highlight">300% Growth</span>
+            <span class="metric highlight">18 Months</span>
+          </div>
+        </div>
+      </article>
+      
+      <article class="case-study">
+        <div class="case-study-content">
+          <h3>Non-Profit Transformation</h3>
+          <p>Guided a non-profit organization through a complete digital transformation, increasing their reach by 500%.</p>
+          <div class="case-study-metrics">
+            <span class="metric highlight">500% Reach</span>
+            <span class="metric highlight">12 Months</span>
+          </div>
+        </div>
+      </article>
+      
+      <article class="case-study">
+        <div class="case-study-content">
+          <h3>Corporate Innovation</h3>
+          <p>Facilitated innovation workshops for a Fortune 500 company, resulting in 15 new product concepts and improved team collaboration.</p>
+          <div class="case-study-metrics">
+            <span class="metric highlight">15 Concepts</span>
+            <span class="metric highlight">6 Months</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+  .case-studies {
+    background-color: var(--bg-light);
+  }
+
+  .case-studies h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  .section-description {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    text-align: left;
+    margin-bottom: 4rem;
+    max-width: 600px;
+    line-height: 1.6;
+  }
+
+  .case-studies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+  }
+
+  .case-study {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+  }
+
+  .case-study:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  }
+
+  .case-study h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+  }
+
+  .case-study p {
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .case-study-metrics {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .metric {
+    background: var(--bg-light);
+    color: var(--text-dark);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .metric.highlight {
+    background: var(--accent-blue);
+    color: white;
+    font-weight: 600;
+  }
+
+  @media (max-width: 768px) {
+    .case-studies h2 {
+      font-size: 2rem;
+    }
+
+    .section-description {
+      font-size: 1.1rem;
+      margin-bottom: 3rem;
+    }
+
+    .case-studies-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .case-study {
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .case-study h3 {
+      font-size: 1.25rem;
+    }
+
+    .case-study-metrics {
+      gap: 0.75rem;
+    }
+
+    .metric {
+      font-size: 0.85rem;
+      padding: 0.4rem 0.8rem;
+    }
+  }
+</style>
