@@ -4,32 +4,38 @@
 
 <section class="why-us section-animate">
   <div class="section-container">
-    <h2>Clarity. Speed. Control.</h2>
-    <p class="section-description">Most automation agencies push complexity. We do the opposite. Branch & Signal builds practical, no-nonsense tools that slot into your workflows, pay for themselves fast, and leave your team in control.</p>
-    
-    <div class="value-props-grid">
-      <div class="value-prop card-animate top-left">
-        <div class="value-icon">💰</div>
-        <h3>ROI First</h3>
-        <p>If it doesn't save money or time, we don't build it. Every solution is designed to deliver measurable returns quickly.</p>
+    <div class="why-us-layout">
+      <div class="why-us-text">
+        <h2>Clarity. Speed. Control.</h2>
+        <p class="section-description">
+          Most automation agencies push complexity. We do the opposite. Branch & Signal builds practical, no-nonsense tools that slot into your workflows, pay for themselves fast, and leave your team in control.
+        </p>
       </div>
       
-      <div class="value-prop card-animate top-right">
-        <div class="value-icon">⚡</div>
-        <h3>Lightweight, No Bloat</h3>
-        <p>Bespoke tools designed to fit your exact process, not the other way around. No unnecessary complexity or features.</p>
-      </div>
-      
-      <div class="value-prop card-animate bottom-left">
-        <div class="value-icon">🔓</div>
-        <h3>Enablement, Not Dependency</h3>
-        <p>Clear guides and playbooks so your team can run with confidence — no vendor lock-in or hidden dependencies.</p>
-      </div>
-      
-      <div class="value-prop card-animate bottom-right">
-        <div class="value-icon">🎯</div>
-        <h3>Risk-Free Discovery</h3>
-        <p>Our Discovery Sprint identifies ROI opportunities. If we don't find any, you don't pay. Zero risk, all reward.</p>
+      <div class="value-props-container">
+        <div class="value-prop top-left">
+          <div class="icon-placeholder">💰</div>
+          <h3>ROI First</h3>
+          <p>If it doesn't save money or time, we don't build it. Every solution is designed to deliver measurable returns quickly.</p>
+        </div>
+        
+        <div class="value-prop top-right">
+          <div class="icon-placeholder">⚡</div>
+          <h3>Lightweight, No Bloat</h3>
+          <p>Bespoke tools designed to fit your exact process, not the other way around. No unnecessary complexity or features.</p>
+        </div>
+        
+        <div class="value-prop bottom-left">
+          <div class="icon-placeholder">🔓</div>
+          <h3>Enablement, Not Dependency</h3>
+          <p>Clear guides and playbooks so your team can run with confidence — no vendor lock-in or hidden dependencies.</p>
+        </div>
+        
+        <div class="value-prop bottom-right">
+          <div class="icon-placeholder">🎯</div>
+          <h3>Risk-Free Discovery</h3>
+          <p>Our Discovery Sprint identifies ROI opportunities. If we don't find any, you don't pay. Zero risk, all reward.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -37,116 +43,152 @@
 
 <style>
   .why-us {
-    background-color: #F8F9FA;
+    background-color: var(--bg-light);
+    padding: 126px 0;
+  }
+
+  .why-us-layout {
     position: relative;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .why-us-text {
+    text-align: center;
+    max-width: 840px;
+    z-index: 2;
+    position: relative;
+  }
+
+  .why-us-text h2 {
+    font-size: clamp(2.625rem, 5.25vw, 4.725rem);
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 2.625rem;
+    line-height: 1.2;
   }
 
   .section-description {
-    font-size: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
-    color: var(--text-dark);
-    text-align: left;
-    margin-bottom: 4.2rem; /* 5% larger: 4rem to 4.2rem */
-    max-width: 840px; /* 5% larger: 800px to 840px */
+    font-size: clamp(1.26rem, 2.625vw, 1.575rem);
     line-height: 1.6;
+    color: var(--text-dark);
+    margin-bottom: 0;
   }
 
-  .value-props-grid {
-    position: relative;
-    height: 600px;
-    margin-top: 3.15rem; /* 5% larger: 3rem to 3.75rem */
+  .value-props-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
   }
 
   .value-prop {
     position: absolute;
-    text-align: left;
-    padding: 2.1rem; /* 5% larger: 2rem to 2.1rem */
-    background-color: white;
-    border-radius: 8.4px; /* 5% larger: 8px to 8.4px */
-    box-shadow: 0 4.2px 21px rgba(0, 0, 0, 0.08); /* 5% larger shadows */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 280px;
     max-width: 280px;
+    background: white;
+    padding: 2.625rem;
+    border-radius: 12.6px;
+    box-shadow: 0 4.2px 21px rgba(0, 0, 0, 0.1);
+    pointer-events: auto;
+    transition: all 0.3s ease;
   }
 
   .value-prop:hover {
-    transform: translateY(-5.25px); /* 5% larger: -5px to -5.25px */
-    box-shadow: 0 8.4px 31.5px rgba(0, 0, 0, 0.12); /* 5% larger shadows */
+    transform: translateY(-10.5px);
+    box-shadow: 0 8.4px 31.5px rgba(0, 0, 0, 0.15);
   }
 
   .value-prop.top-left {
-    top: 0;
-    left: 0;
+    top: 10%;
+    left: 5%;
   }
 
   .value-prop.top-right {
-    top: 0;
-    right: 0;
+    top: 15%;
+    right: 8%;
   }
 
   .value-prop.bottom-left {
-    bottom: 0;
-    left: 0;
+    bottom: 20%;
+    left: 10%;
   }
 
   .value-prop.bottom-right {
-    bottom: 0;
-    right: 0;
+    bottom: 15%;
+    right: 5%;
   }
 
-  .value-icon {
-    font-size: 2.625rem; /* 5% larger: 2.5rem to 2.625rem */
-    margin-bottom: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
-    display: block;
+  .icon-placeholder {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-orange), var(--accent-purple));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 31.5px;
+    margin-bottom: 1.575rem;
+    color: white;
   }
 
   .value-prop h3 {
-    text-align: left;
-    margin-bottom: 1.05rem; /* 5% larger: 1rem to 1.05rem */
+    font-size: clamp(1.26rem, 2.625vw, 1.575rem);
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 1.575rem;
+    line-height: 1.3;
   }
 
   .value-prop p {
-    text-align: left;
+    font-size: clamp(1.05rem, 2.1vw, 1.26rem);
+    line-height: 1.5;
     color: var(--text-dark);
-    line-height: 1.6;
     margin: 0;
   }
 
   @media (max-width: 768px) {
-    .section-description {
-      font-size: 1.155rem; /* 5% larger: 1.1rem to 1.155rem */
-      margin-bottom: 3.75rem; /* 5% larger: 3rem to 3.75rem */
-    }
-
-    .value-props-grid {
-      height: auto;
-      position: relative;
+    .why-us-layout {
+      min-height: auto;
+      padding: 63px 0;
     }
 
     .value-prop {
-      position: relative;
+      position: static;
       width: 100%;
       max-width: none;
-      margin-bottom: 2.1rem; /* 5% larger: 2rem to 2.1rem */
+      margin-bottom: 2.625rem;
     }
 
-    .value-prop.top-left,
-    .value-prop.top-right,
-    .value-prop.bottom-left,
-    .value-prop.bottom-right {
-      position: relative;
-      top: auto;
-      left: auto;
-      right: auto;
-      bottom: auto;
+    .value-props-container {
+      position: static;
+      margin-top: 3.15rem;
+    }
+
+    .why-us-text {
+      margin-bottom: 3.15rem;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    .why-us-layout {
+      min-height: 1000px;
     }
 
     .value-prop {
-      padding: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
+      width: 350px;
+      max-width: 350px;
+      padding: 3.15rem;
     }
 
-    .value-icon {
-      font-size: 2.1rem; /* 5% larger: 2rem to 2.1rem */
-      margin-bottom: 1.05rem; /* 5% larger: 1rem to 1.05rem */
+    .icon-placeholder {
+      width: 78.75px;
+      height: 78.75px;
+      font-size: 39.375px;
     }
   }
 </style>

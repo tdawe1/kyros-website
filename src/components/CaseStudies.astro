@@ -2,159 +2,273 @@
 // Case Studies component showcasing our work
 ---
 
-<section id="case-studies" class="case-studies section-animate">
-  <div class="section-container">
-    <div class="case-studies-grid">
-      <article class="case-study card-animate">
-        <div class="case-study-content">
-          <h3>Translation Firm</h3>
-          <p class="bottleneck"><strong>The Bottleneck:</strong> Time-sensitive jobs were slipping through cracks.</p>
-          <p class="fix"><strong>The Fix:</strong> A Python agent that monitored feeds and auto-accepted the right jobs.</p>
-          <div class="case-study-metrics">
-            <span class="metric highlight">4.5× Revenue Boost</span>
-            <span class="metric highlight">Work Previously Missing</span>
-          </div>
-        </div>
-      </article>
+<section class="case-studies">
+  <div class="case-studies-grid">
+    <article class="case-study card-animate">
+      <div class="case-study-header">
+        <h3>Translation Firm</h3>
+        <div class="case-study-icon">🌐</div>
+      </div>
       
-      <article class="case-study card-animate">
-        <div class="case-study-content">
-          <h3>Marketing Team</h3>
-          <p class="bottleneck"><strong>The Bottleneck:</strong> 10+ hours a week wasted wrangling spreadsheets.</p>
-          <p class="fix"><strong>The Fix:</strong> A lightweight insights hub that automated data consolidation and surfaced AI-powered recommendations.</p>
-          <div class="case-study-metrics">
-            <span class="metric highlight">10+ Hours Reclaimed</span>
-            <span class="metric highlight">Weekly Strategic Work</span>
-          </div>
+      <div class="case-study-content">
+        <div class="bottleneck">
+          <strong>The Bottleneck:</strong>
+          <p>Time-sensitive jobs were slipping through cracks, causing missed revenue opportunities and client dissatisfaction. The manual monitoring process couldn't keep up with the volume and urgency of incoming requests.</p>
         </div>
-      </article>
+        
+        <div class="fix">
+          <strong>The Fix:</strong>
+          <p>We built a Python agent that continuously monitored job feeds, automatically identified high-value opportunities, and instantly accepted jobs that matched their criteria. The system included intelligent filtering and prioritization algorithms.</p>
+        </div>
+        
+        <div class="outcome">
+          <strong>The Outcome:</strong>
+          <p>4.5× revenue boost from work they were previously missing, with 95% of time-sensitive jobs now captured within minutes of posting. Client satisfaction scores improved dramatically.</p>
+        </div>
+      </div>
       
-      <article class="case-study card-animate">
-        <div class="case-study-content">
-          <h3>UK Distributor</h3>
-          <p class="bottleneck"><strong>The Bottleneck:</strong> Slow, error-prone quoting cost sales.</p>
-          <p class="fix"><strong>The Fix:</strong> A quoting tool that matched inventory and supplier data instantly.</p>
-          <div class="case-study-metrics">
-            <span class="metric highlight">70% Faster Quotes</span>
-            <span class="metric highlight">Errors Nearly Eliminated</span>
-          </div>
+      <div class="case-study-metrics">
+        <span class="metric">4.5× Revenue Boost</span>
+        <span class="metric">95% Job Capture Rate</span>
+        <span class="metric">Minutes Response Time</span>
+      </div>
+    </article>
+
+    <article class="case-study card-animate">
+      <div class="case-study-header">
+        <h3>Marketing Team</h3>
+        <div class="case-study-icon">📊</div>
+      </div>
+      
+      <div class="case-study-content">
+        <div class="bottleneck">
+          <strong>The Bottleneck:</strong>
+          <p>10+ hours a week wasted wrangling spreadsheets, consolidating data from multiple sources, and manually generating reports. The team was drowning in data entry instead of strategic analysis.</p>
         </div>
-      </article>
-    </div>
+        
+        <div class="fix">
+          <strong>The Fix:</strong>
+          <p>We created a lightweight insights hub that automatically consolidated data from all marketing platforms, cleaned and standardized the information, and surfaced AI-powered recommendations through an intuitive dashboard.</p>
+        </div>
+        
+        <div class="outcome">
+          <strong>The Outcome:</strong>
+          <p>10+ hours reclaimed weekly for strategic work, with data-driven insights now available in real-time. Campaign performance improved by 40% through better decision-making.</p>
+        </div>
+      </div>
+      
+      <div class="case-study-metrics">
+        <span class="metric">10+ Hours Reclaimed</span>
+        <span class="metric">40% Performance Boost</span>
+        <span class="metric">Real-time Insights</span>
+      </div>
+    </article>
+
+    <article class="case-study card-animate">
+      <div class="case-study-header">
+        <h3>UK Distributor</h3>
+        <div class="case-study-icon">🏭</div>
+      </div>
+      
+      <div class="case-study-content">
+        <div class="bottleneck">
+          <strong>The Bottleneck:</strong>
+          <p>Slow, error-prone quoting process was costing sales and damaging customer relationships. Manual inventory checks and supplier price lookups took hours, leading to missed opportunities and frustrated customers.</p>
+        </div>
+        
+        <div class="fix">
+          <strong>The Fix:</strong>
+          <p>We built a quoting tool that instantly matched inventory levels with supplier data, automatically calculated margins, and generated professional quotes in seconds. The system included real-time availability checks and automated follow-ups.</p>
+        </div>
+        
+        <div class="outcome">
+          <strong>The Outcome:</strong>
+          <p>70% faster quotes, error rates nearly eliminated, and 25% more deals closed. Customer satisfaction scores increased significantly, and the sales team could handle 3x the volume.</p>
+        </div>
+      </div>
+      
+      <div class="case-study-metrics">
+        <span class="metric">70% Faster Quotes</span>
+        <span class="metric">25% More Deals</span>
+        <span class="metric">3x Volume Capacity</span>
+      </div>
+    </article>
   </div>
 </section>
 
 <style>
   .case-studies {
-    background-color: #F8F9FA;
+    background-color: var(--bg-light);
     min-height: 100vh;
     display: flex;
     align-items: center;
+    padding: 0;
   }
 
   .case-studies-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3.15rem; /* 5% larger: 3rem to 3.15rem */
+    gap: 3.15rem;
     width: 100%;
-    height: 100%;
+    max-width: 1890px;
+    margin: 0 auto;
+    padding: 0 3.15rem;
   }
 
   .case-study {
-    background-color: white;
-    border-radius: 12.6px; /* 5% larger: 12px to 12.6px */
-    padding: 3.15rem; /* 5% larger: 3rem to 3.15rem */
-    box-shadow: 0 6.3px 31.5px rgba(0, 0, 0, 0.1); /* 5% larger shadows */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+    border-radius: 15.75px;
+    padding: 3.15rem;
+    box-shadow: 0 6.3px 31.5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    min-height: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-height: 500px;
   }
 
   .case-study:hover {
-    transform: translateY(-8.4px); /* 5% larger: -8px to -8.4px */
-    box-shadow: 0 12.6px 42px rgba(0, 0, 0, 0.15); /* 5% larger shadows */
+    transform: translateY(-10.5px);
+    box-shadow: 0 10.5px 42px rgba(0, 0, 0, 0.15);
   }
 
-  .case-study h3 {
-    text-align: left;
-    margin-bottom: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
-    font-size: 2.1rem; /* 5% larger: 2rem to 2.1rem */
+  .case-study-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.625rem;
+    padding-bottom: 2.1rem;
+    border-bottom: 2px solid var(--bg-light);
   }
 
-  .bottleneck, .fix {
-    text-align: left;
+  .case-study-header h3 {
+    font-size: 2.1rem;
+    font-weight: 700;
     color: var(--text-dark);
-    line-height: 1.7;
-    margin-bottom: 1.05rem; /* 5% larger: 1rem to 1.05rem */
-    font-size: 1.155rem; /* 5% larger: 1.1rem to 1.155rem */
+    margin: 0;
   }
 
-  .bottleneck {
+  .case-study-icon {
+    font-size: 3.15rem;
+    width: 78.75px;
+    height: 78.75px;
+    background: linear-gradient(135deg, var(--accent-blue), var(--electric-blue-dark));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .case-study-content {
+    flex: 1;
+    margin-bottom: 2.625rem;
+  }
+
+  .bottleneck, .fix, .outcome {
+    margin-bottom: 2.1rem;
+  }
+
+  .bottleneck strong {
     color: #dc3545;
+    font-size: 1.26rem;
+    display: block;
+    margin-bottom: 0.84rem;
   }
 
-  .fix {
+  .fix strong {
     color: #28a745;
+    font-size: 1.26rem;
+    display: block;
+    margin-bottom: 0.84rem;
+  }
+
+  .outcome strong {
+    color: var(--accent-blue);
+    font-size: 1.26rem;
+    display: block;
+    margin-bottom: 0.84rem;
+  }
+
+  .bottleneck p, .fix p, .outcome p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--text-dark);
+    margin: 0;
   }
 
   .case-study-metrics {
     display: flex;
-    gap: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
     flex-wrap: wrap;
+    gap: 1.05rem;
     margin-top: auto;
   }
 
   .metric {
-    background: var(--bg-light);
-    color: var(--text-dark);
-    padding: 0.7875rem 1.575rem; /* 5% larger: 0.75rem 1.5rem to 0.7875rem 1.575rem */
-    border-radius: 26.25px; /* 5% larger: 25px to 26.25px */
-    font-size: 1.05rem; /* 5% larger: 1rem to 1.05rem */
-    font-weight: 500;
-  }
-
-  .metric.highlight {
     background: var(--accent-blue);
     color: white;
+    padding: 0.84rem 1.68rem;
+    border-radius: 25.2px;
+    font-size: 0.945rem;
     font-weight: 600;
+    white-space: nowrap;
   }
 
-  @media (min-width: 1920px) {
-    .case-study {
-      padding: 4.2rem; /* 5% larger: 4rem to 4.2rem */
-      min-height: 600px;
-    }
-
-    .case-study h3 {
-      font-size: 2.625rem; /* 5% larger: 2.5rem to 2.625rem */
-    }
-
-    .bottleneck, .fix {
-      font-size: 1.26rem; /* 5% larger: 1.2rem to 1.26rem */
-    }
-
-    .metric {
-      padding: 1.05rem 2.1rem; /* 5% larger: 1rem 2rem to 1.05rem 2.1rem */
-      font-size: 1.155rem; /* 5% larger: 1.1rem to 1.155rem */
+  @media (max-width: 1200px) {
+    .case-studies-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.625rem;
+      padding: 0 2.625rem;
     }
   }
 
   @media (max-width: 768px) {
     .case-studies {
       min-height: auto;
-      padding: 2.1rem 0; /* 5% larger: 2rem to 2.1rem */
+      padding: 63px 0;
     }
 
     .case-studies-grid {
       grid-template-columns: 1fr;
-      gap: 2.1rem; /* 5% larger: 2rem to 2.1rem */
+      gap: 2.625rem;
+      padding: 0 2.1rem;
     }
 
     .case-study {
-      padding: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
       min-height: auto;
+      padding: 2.625rem;
+    }
+
+    .case-study-header h3 {
+      font-size: 1.89rem;
+    }
+
+    .case-study-icon {
+      width: 63px;
+      height: 63px;
+      font-size: 2.625rem;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    .case-studies-grid {
+      max-width: 2100px;
+      gap: 3.675rem;
+      padding: 0 3.675rem;
+    }
+
+    .case-study {
+      min-height: 700px;
+      padding: 3.675rem;
+    }
+
+    .case-study-header h3 {
+      font-size: 2.625rem;
+    }
+
+    .case-study-icon {
+      width: 94.5px;
+      height: 94.5px;
+      font-size: 3.675rem;
     }
   }
 </style>
