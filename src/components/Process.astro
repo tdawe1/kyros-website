@@ -4,26 +4,30 @@
 
 <section id="process" class="process section-animate">
   <div class="section-container">
-    <h2>From bottleneck to business win in 4–8 weeks.</h2>
-    <p class="section-description">We've productized our approach so you always know where you stand.</p>
-    
-    <div class="process-grid">
-      <div class="step card-animate">
-        <div class="icon-placeholder">1</div>
-        <h3>Discovery Sprint (1–2 Weeks)</h3>
-        <p>We map your workflows and pinpoint the 3–5 highest-ROI fixes. If we don't find opportunities worth pursuing, you pay nothing.</p>
+    <div class="process-layout">
+      <div class="process-text">
+        <h2>From bottleneck to business win in 4–8 weeks.</h2>
+        <p class="section-description">We've productized our approach so you always know where you stand.</p>
       </div>
       
-      <div class="step card-animate">
-        <div class="icon-placeholder">2</div>
-        <h3>Pilot Build (2–4 Weeks)</h3>
-        <p>We design and deploy your first automation — tackling the most painful bottleneck head-on. From day one, it delivers measurable savings.</p>
-      </div>
-      
-      <div class="step card-animate">
-        <div class="icon-placeholder">3</div>
-        <h3>Implementation & Enablement</h3>
-        <p>We roll out additional solutions, provide your team with simple guides, and stay on hand for refinement — ensuring long-term ROI.</p>
+      <div class="process-grid">
+        <div class="step card-animate step-1">
+          <div class="icon-placeholder">1</div>
+          <h3>Discovery Sprint (1–2 Weeks)</h3>
+          <p>We map your workflows and pinpoint the 3–5 highest-ROI fixes. If we don't find opportunities worth pursuing, you pay nothing.</p>
+        </div>
+        
+        <div class="step card-animate step-2">
+          <div class="icon-placeholder">2</div>
+          <h3>Pilot Build (2–4 Weeks)</h3>
+          <p>We design and deploy your first automation — tackling the most painful bottleneck head-on. From day one, it delivers measurable savings.</p>
+        </div>
+        
+        <div class="step card-animate step-3">
+          <div class="icon-placeholder">3</div>
+          <h3>Implementation & Enablement</h3>
+          <p>We roll out additional solutions, provide your team with simple guides, and stay on hand for refinement — ensuring long-term ROI.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -34,39 +38,73 @@
     background-color: #F8F9FA;
   }
 
+  .process-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4.2rem; /* 5% larger: 4rem to 4.2rem */
+    align-items: start;
+  }
+
+  .process-text {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .process-text h2 {
+    font-size: 2.625rem; /* 5% larger: 2.5rem to 2.625rem */
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
+    line-height: 1.2;
+    text-align: left;
+  }
+
   .section-description {
     font-size: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
     color: var(--text-dark);
     text-align: left;
-    margin-bottom: 5.25rem; /* 5% larger: 5rem to 5.25rem */
-    max-width: 840px; /* 5% larger: 800px to 840px */
+    max-width: 500px;
     line-height: 1.6;
   }
 
   .process-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr)); /* 5% larger: 300px to 315px */
-    gap: 3.15rem; /* 5% larger: 3rem to 3.15rem */
-    margin-top: 4.2rem; /* 5% larger: 4rem to 4.2rem */
-    justify-items: start;
+    grid-column: 2;
+    grid-row: 1;
+    position: relative;
+    height: 600px;
+    width: 100%;
   }
 
   .step {
+    position: absolute;
     text-align: left;
-    padding: 3.15rem; /* 5% larger: 3rem to 3.15rem */
+    padding: 2.625rem; /* 5% larger: 2.5rem to 2.625rem */
     background-color: white;
     border-radius: 12.6px; /* 5% larger: 12px to 12.6px */
     box-shadow: 0 6.3px 31.5px rgba(0, 0, 0, 0.1); /* 5% larger shadows */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-height: 315px; /* 5% larger: 300px to 315px */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    width: 320px;
+    max-width: 320px;
   }
 
   .step:hover {
     transform: translateY(-8.4px); /* 5% larger: -8px to -8.4px */
     box-shadow: 0 12.6px 42px rgba(0, 0, 0, 0.15); /* 5% larger shadows */
+  }
+
+  .step-1 {
+    top: 0;
+    left: 0;
+  }
+
+  .step-2 {
+    top: 200px;
+    left: 100px;
+  }
+
+  .step-3 {
+    top: 400px;
+    left: 200px;
   }
 
   .icon-placeholder {
@@ -97,14 +135,10 @@
   }
 
   @media (min-width: 1920px) {
-    .process-grid {
-      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); /* 5% larger: 400px to 420px */
-      gap: 4.2rem; /* 5% larger: 4rem to 4.2rem */
-    }
-
     .step {
-      padding: 4.2rem; /* 5% larger: 4rem to 4.2rem */
-      min-height: 367.5px; /* 5% larger: 350px to 367.5px */
+      padding: 3.675rem; /* 5% larger: 3.5rem to 3.675rem */
+      width: 360px;
+      max-width: 360px;
     }
 
     .icon-placeholder {
@@ -115,24 +149,45 @@
 
     .section-description {
       font-size: 1.8375rem; /* 5% larger: 1.75rem to 1.8375rem */
-      margin-bottom: 6.3rem; /* 5% larger: 6rem to 6.3rem */
     }
   }
 
   @media (max-width: 768px) {
+    .process-layout {
+      grid-template-columns: 1fr;
+      gap: 2.1rem; /* 5% larger: 2rem to 2.1rem */
+    }
+
+    .process-text {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .process-grid {
+      grid-column: 1;
+      grid-row: 2;
+      height: auto;
+      position: relative;
+    }
+
     .section-description {
       font-size: 1.155rem; /* 5% larger: 1.1rem to 1.155rem */
       margin-bottom: 3.15rem; /* 5% larger: 3rem to 3.15rem */
     }
 
-    .process-grid {
-      grid-template-columns: 1fr;
-      gap: 2.1rem; /* 5% larger: 2rem to 2.1rem */
+    .step {
+      position: relative;
+      width: 100%;
+      max-width: none;
+      margin-bottom: 2.1rem; /* 5% larger: 2rem to 2.1rem */
+      padding: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
     }
 
-    .step {
-      padding: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
-      min-height: auto;
+    .step-1,
+    .step-2,
+    .step-3 {
+      top: auto;
+      left: auto;
     }
 
     .icon-placeholder {

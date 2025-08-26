@@ -8,25 +8,25 @@
     <p class="section-description">Most automation agencies push complexity. We do the opposite. Branch & Signal builds practical, no-nonsense tools that slot into your workflows, pay for themselves fast, and leave your team in control.</p>
     
     <div class="value-props-grid">
-      <div class="value-prop card-animate">
+      <div class="value-prop card-animate top-left">
         <div class="value-icon">💰</div>
         <h3>ROI First</h3>
         <p>If it doesn't save money or time, we don't build it. Every solution is designed to deliver measurable returns quickly.</p>
       </div>
       
-      <div class="value-prop card-animate">
+      <div class="value-prop card-animate top-right">
         <div class="value-icon">⚡</div>
         <h3>Lightweight, No Bloat</h3>
         <p>Bespoke tools designed to fit your exact process, not the other way around. No unnecessary complexity or features.</p>
       </div>
       
-      <div class="value-prop card-animate">
+      <div class="value-prop card-animate bottom-left">
         <div class="value-icon">🔓</div>
         <h3>Enablement, Not Dependency</h3>
         <p>Clear guides and playbooks so your team can run with confidence — no vendor lock-in or hidden dependencies.</p>
       </div>
       
-      <div class="value-prop card-animate">
+      <div class="value-prop card-animate bottom-right">
         <div class="value-icon">🎯</div>
         <h3>Risk-Free Discovery</h3>
         <p>Our Discovery Sprint identifies ROI opportunities. If we don't find any, you don't pay. Zero risk, all reward.</p>
@@ -38,6 +38,7 @@
 <style>
   .why-us {
     background-color: #F8F9FA;
+    position: relative;
   }
 
   .section-description {
@@ -50,24 +51,46 @@
   }
 
   .value-props-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(262.5px, 1fr)); /* 5% larger: 250px to 262.5px */
-    gap: 2.625rem; /* 5% larger: 2.5rem to 2.625rem */
-    margin-top: 3.15rem; /* 5% larger: 3rem to 3.15rem */
+    position: relative;
+    height: 600px;
+    margin-top: 3.15rem; /* 5% larger: 3rem to 3.75rem */
   }
 
   .value-prop {
+    position: absolute;
     text-align: left;
     padding: 2.1rem; /* 5% larger: 2rem to 2.1rem */
     background-color: white;
     border-radius: 8.4px; /* 5% larger: 8px to 8.4px */
     box-shadow: 0 4.2px 21px rgba(0, 0, 0, 0.08); /* 5% larger shadows */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 280px;
+    max-width: 280px;
   }
 
   .value-prop:hover {
     transform: translateY(-5.25px); /* 5% larger: -5px to -5.25px */
     box-shadow: 0 8.4px 31.5px rgba(0, 0, 0, 0.12); /* 5% larger shadows */
+  }
+
+  .value-prop.top-left {
+    top: 0;
+    left: 0;
+  }
+
+  .value-prop.top-right {
+    top: 0;
+    right: 0;
+  }
+
+  .value-prop.bottom-left {
+    bottom: 0;
+    left: 0;
+  }
+
+  .value-prop.bottom-right {
+    bottom: 0;
+    right: 0;
   }
 
   .value-icon {
@@ -91,12 +114,30 @@
   @media (max-width: 768px) {
     .section-description {
       font-size: 1.155rem; /* 5% larger: 1.1rem to 1.155rem */
-      margin-bottom: 3.15rem; /* 5% larger: 3rem to 3.15rem */
+      margin-bottom: 3.75rem; /* 5% larger: 3rem to 3.75rem */
     }
 
     .value-props-grid {
-      grid-template-columns: 1fr;
-      gap: 2.1rem; /* 5% larger: 2rem to 2.1rem */
+      height: auto;
+      position: relative;
+    }
+
+    .value-prop {
+      position: relative;
+      width: 100%;
+      max-width: none;
+      margin-bottom: 2.1rem; /* 5% larger: 2rem to 2.1rem */
+    }
+
+    .value-prop.top-left,
+    .value-prop.top-right,
+    .value-prop.bottom-left,
+    .value-prop.bottom-right {
+      position: relative;
+      top: auto;
+      left: auto;
+      right: auto;
+      bottom: auto;
     }
 
     .value-prop {

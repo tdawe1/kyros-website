@@ -1,0 +1,354 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Book Your Free Discovery Call - Branch & Signal">
+  <div class="discovery-page page-transition">
+    <header class="discovery-header">
+      <div class="section-container">
+        <div class="header-content">
+          <h1>Book Your Free Discovery Call</h1>
+          <p class="subtitle">No obligation. No pressure. Just clarity on where automation can transform your business.</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="discovery-content">
+      <div class="section-container">
+        <div class="content-grid">
+          <div class="left-column">
+            <div class="benefits-section">
+              <h2>What You'll Get</h2>
+              <div class="benefit-list">
+                <div class="benefit-item">
+                  <div class="benefit-icon">🎯</div>
+                  <div class="benefit-text">
+                    <h3>Workflow Mapping</h3>
+                    <p>We'll analyze your current processes and identify the 3-5 highest-ROI automation opportunities.</p>
+                  </div>
+                </div>
+                
+                <div class="benefit-item">
+                  <div class="benefit-icon">💰</div>
+                  <div class="benefit-text">
+                    <h3>ROI Calculation</h3>
+                    <p>Clear numbers on time savings, cost reduction, and revenue impact from automation.</p>
+                  </div>
+                </div>
+                
+                <div class="benefit-item">
+                  <div class="benefit-icon">⚡</div>
+                  <div class="benefit-text">
+                    <h3>Implementation Roadmap</h3>
+                    <p>Step-by-step plan to get your first automation live in 4-8 weeks.</p>
+                  </div>
+                </div>
+                
+                <div class="benefit-item">
+                  <div class="benefit-icon">🔒</div>
+                  <div class="benefit-text">
+                    <h3>Zero Risk</h3>
+                    <p>If we don't find opportunities worth pursuing, you pay nothing. Guaranteed.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="right-column">
+            <div class="booking-form">
+              <h2>Book Your Call</h2>
+              <p class="form-subtitle">Choose a time that works for you. Calls typically last 30-45 minutes.</p>
+              
+              <form class="contact-form">
+                <div class="form-group">
+                  <label for="name">Full Name *</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="company">Company Name *</label>
+                  <input type="text" id="company" name="company" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                  <label for="industry">Industry</label>
+                  <select id="industry" name="industry">
+                    <option value="">Select your industry</option>
+                    <option value="distributor">Distributor/Wholesaler</option>
+                    <option value="agency">Agency/Marketing</option>
+                    <option value="professional">Professional Services</option>
+                    <option value="manufacturing">Light Manufacturing</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                
+                <div class="form-group">
+                  <label for="message">Tell us about your biggest bottleneck</label>
+                  <textarea id="message" name="message" rows="3" placeholder="What's costing you time or money right now?"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Book My Free Discovery Call</button>
+              </form>
+              
+              <div class="form-footer">
+                <p>🔒 Your information is secure and will never be shared.</p>
+                <p>📞 We'll confirm your booking within 2 hours.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="social-proof">
+      <div class="section-container">
+        <h2>Trusted by UK SMEs</h2>
+        <div class="testimonial-grid">
+          <div class="testimonial">
+            <p>"The discovery call opened our eyes to automation opportunities we never knew existed. 10 hours saved weekly."</p>
+            <div class="testimonial-author">
+              <strong>Sarah Chen</strong>
+              <span>Marketing Director, TechFlow</span>
+            </div>
+          </div>
+          
+          <div class="testimonial">
+            <p>"Branch & Signal delivered exactly what they promised. Our quoting process is now 70% faster."</p>
+            <div class="testimonial-author">
+              <strong>Mike Thompson</strong>
+              <span>Operations Manager, UK Distributors</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  .discovery-page {
+    background-color: var(--bg-light);
+  }
+
+  .discovery-header {
+    background: linear-gradient(135deg, var(--accent-blue) 0%, var(--electric-blue-dark) 100%);
+    color: white;
+    padding: 6.3rem 0; /* 5% larger: 6rem to 6.3rem */
+    text-align: center;
+  }
+
+  .header-content h1 {
+    font-size: 4.2rem; /* 5% larger: 4rem to 4.2rem */
+    font-weight: 700;
+    margin-bottom: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .discovery-content {
+    padding: 6.3rem 0; /* 5% larger: 6rem to 6.3rem */
+  }
+
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6.3rem; /* 5% larger: 6rem to 6.3rem */
+    align-items: start;
+  }
+
+  .benefits-section h2 {
+    font-size: 2.625rem; /* 5% larger: 2.5rem to 2.625rem */
+    margin-bottom: 3.15rem; /* 5% larger: 3rem to 3.15rem */
+    color: var(--text-dark);
+  }
+
+  .benefit-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.625rem; /* 5% larger: 2.5rem to 2.625rem */
+  }
+
+  .benefit-item {
+    display: flex;
+    gap: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
+    align-items: flex-start;
+  }
+
+  .benefit-icon {
+    font-size: 2.625rem; /* 5% larger: 2.5rem to 2.625rem */
+    flex-shrink: 0;
+  }
+
+  .benefit-text h3 {
+    font-size: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
+    margin-bottom: 0.525rem; /* 5% larger: 0.5rem to 0.525rem */
+    color: var(--text-dark);
+  }
+
+  .benefit-text p {
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .booking-form {
+    background: white;
+    padding: 3.15rem; /* 5% larger: 3rem to 3.15rem */
+    border-radius: 12.6px; /* 5% larger: 12px to 12.6px */
+    box-shadow: 0 6.3px 31.5px rgba(0, 0, 0, 0.1);
+  }
+
+  .booking-form h2 {
+    font-size: 2.625rem; /* 5% larger: 2.5rem to 2.625rem */
+    margin-bottom: 1.05rem; /* 5% larger: 1rem to 1.05rem */
+    color: var(--text-dark);
+  }
+
+  .form-subtitle {
+    color: var(--text-dark);
+    margin-bottom: 2.625rem; /* 5% larger: 2.5rem to 2.625rem */
+    font-size: 1.155rem; /* 5% larger: 1.1rem to 1.155rem */
+  }
+
+  .form-group {
+    margin-bottom: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 0.525rem; /* 5% larger: 0.5rem to 0.525rem */
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.7875rem; /* 5% larger: 0.75rem to 0.7875rem */
+    border: 2px solid #e9ecef;
+    border-radius: 8.4px; /* 5% larger: 8px to 8.4px */
+    font-size: 1.05rem; /* 5% larger: 1rem to 1.05rem */
+    transition: border-color 0.3s ease;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+  }
+
+  .submit-btn {
+    width: 100%;
+    background: linear-gradient(135deg, var(--accent-blue) 0%, var(--electric-blue-dark) 100%);
+    color: white;
+    padding: 1.26rem 2.52rem; /* 5% larger: 1.2rem 2.4rem to 1.26rem 2.52rem */
+    border: none;
+    border-radius: 8.4px; /* 5% larger: 8px to 8.4px */
+    font-size: 1.26rem; /* 5% larger: 1.2rem to 1.26rem */
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4.2px 15.75px rgba(0, 123, 255, 0.3);
+  }
+
+  .submit-btn:hover {
+    transform: translateY(-2.1px);
+    box-shadow: 0 6.3px 21px rgba(0, 123, 255, 0.4);
+  }
+
+  .form-footer {
+    margin-top: 2.625rem; /* 5% larger: 2.5rem to 2.625rem */
+    text-align: center;
+    font-size: 0.945rem; /* 5% larger: 0.9rem to 0.945rem */
+    color: #6c757d;
+  }
+
+  .form-footer p {
+    margin: 0.525rem 0; /* 5% larger: 0.5rem to 0.525rem */
+  }
+
+  .social-proof {
+    background-color: white;
+    padding: 6.3rem 0; /* 5% larger: 6rem to 6.3rem */
+    text-align: center;
+  }
+
+  .social-proof h2 {
+    font-size: 2.625rem; /* 5% larger: 2.5rem to 2.625rem */
+    margin-bottom: 4.2rem; /* 5% larger: 4rem to 4.2rem */
+    color: var(--text-dark);
+  }
+
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3.15rem; /* 5% larger: 3rem to 3.15rem */
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .testimonial {
+    background: var(--bg-light);
+    padding: 2.625rem; /* 5% larger: 2.5rem to 2.625rem */
+    border-radius: 12.6px; /* 5% larger: 12px to 12.6px */
+    text-align: left;
+  }
+
+  .testimonial p {
+    font-size: 1.26rem; /* 5% larger: 1.2rem to 1.26rem */
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin-bottom: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
+    font-style: italic;
+  }
+
+  .testimonial-author strong {
+    display: block;
+    color: var(--text-dark);
+    font-size: 1.155rem; /* 5% larger: 1.1rem to 1.155rem */
+  }
+
+  .testimonial-author span {
+    color: #6c757d;
+    font-size: 1.05rem; /* 5% larger: 1rem to 1.05rem */
+  }
+
+  @media (max-width: 768px) {
+    .content-grid {
+      grid-template-columns: 1fr;
+      gap: 3.15rem; /* 5% larger: 3rem to 3.15rem */
+    }
+
+    .header-content h1 {
+      font-size: 3.15rem; /* 5% larger: 3rem to 3.15rem */
+    }
+
+    .subtitle {
+      font-size: 1.26rem; /* 5% larger: 1.2rem to 1.26rem */
+    }
+
+    .testimonial-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
