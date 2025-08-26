@@ -51,11 +51,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 0.84rem;
-    min-height: 500px;
+    gap: 1.575rem;
+    min-height: 800px;
     align-items: center;
     justify-items: center;
-    padding: 31.5px 0;
+    padding: 63px 0;
   }
 
   .why-us-text {
@@ -87,12 +87,12 @@
 
   .value-prop {
     background: white;
-    padding: 1.26rem;
+    padding: 2.1rem;
     border-radius: 12.6px;
     box-shadow: 0 4.2px 21px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    width: 160px;
-    max-width: 160px;
+    width: 250px;
+    max-width: 250px;
   }
 
   .value-prop:hover {
@@ -100,60 +100,60 @@
     box-shadow: 0 8.4px 31.5px rgba(0, 0, 0, 0.15);
   }
 
-  .value-prop.top-left {
-    grid-column: 1;
-    grid-row: 1;
-    justify-self: end;
-    align-self: end;
-  }
-
-  .value-prop.top-right {
-    grid-column: 3;
-    grid-row: 1;
-    justify-self: start;
-    align-self: end;
-  }
-
-  .value-prop.bottom-left {
-    grid-column: 1;
-    grid-row: 3;
-    justify-self: end;
-    align-self: start;
-  }
-
-  .value-prop.bottom-right {
-    grid-column: 3;
-    grid-row: 3;
-    justify-self: start;
-    align-self: start;
-  }
-
   .icon-placeholder {
-    width: 42px;
-    height: 42px;
+    width: 63px;
+    height: 63px;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--accent-orange), var(--accent-purple));
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 21px;
-    margin-bottom: 1.05rem;
+    font-size: 31.5px;
+    margin-bottom: 1.575rem;
     color: white;
   }
 
   .value-prop h3 {
-    font-size: 1.05rem;
+    font-size: clamp(1.26rem, 2.625vw, 1.575rem);
     font-weight: 600;
     color: var(--text-dark);
-    margin-bottom: 1.05rem;
+    margin-bottom: 1.575rem;
     line-height: 1.3;
   }
 
   .value-prop p {
-    font-size: 0.84rem;
-    line-height: 1.4;
+    font-size: clamp(1.05rem, 2.1vw, 1.26rem);
+    line-height: 1.5;
     color: var(--text-dark);
     margin: 0;
+  }
+
+  .value-prop.top-left {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+    align-self: start;
+  }
+
+  .value-prop.top-right {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+    align-self: start;
+  }
+
+  .value-prop.bottom-left {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: start;
+    align-self: end;
+  }
+
+  .value-prop.bottom-right {
+    grid-column: 3;
+    grid-row: 3;
+    justify-self: end;
+    align-self: end;
   }
 
   @media (max-width: 768px) {
