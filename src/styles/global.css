@@ -42,18 +42,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 700;
   color: var(--text-dark);
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   line-height: 1.2;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   color: var(--text-dark);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   line-height: 1.3;
 }
 
@@ -62,15 +62,36 @@ p {
   text-align: left;
 }
 
-/* Global Container */
+/* Global Container - Better 4K utilization */
 .section-container {
-  width: 90%;
-  max-width: 1100px;
+  width: 95%;
+  max-width: 1800px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 120px 0;
 }
 
 /* Global CTA Button Styles */
 .cta-button {
   border-radius: 8px;
+}
+
+/* Responsive adjustments for larger screens */
+@media (min-width: 1920px) {
+  html {
+    font-size: 18px;
+  }
+  
+  .section-container {
+    width: 98%;
+    max-width: 2000px;
+    padding: 150px 0;
+  }
+  
+  h2 {
+    font-size: 4rem;
+  }
+  
+  h3 {
+    font-size: 2.5rem;
+  }
 }
