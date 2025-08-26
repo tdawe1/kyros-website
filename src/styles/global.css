@@ -29,14 +29,18 @@ html, body {
 /* Global body styles */
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  background-color: var(--bg-light);
+  background-color: #F8F9FA;
   color: var(--text-dark);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Global Typographic Hierarchy */
+/* Global Typographic Hierarchy - ENFORCE LEFT ALIGNMENT */
+h1, h2, h3, h4, h5, h6 {
+  text-align: left;
+}
+
 h2 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -51,6 +55,11 @@ h3 {
   color: var(--text-dark);
   margin-bottom: 1rem;
   line-height: 1.3;
+}
+
+/* Global paragraph alignment */
+p {
+  text-align: left;
 }
 
 /* Global Container */
