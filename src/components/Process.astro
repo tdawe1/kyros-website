@@ -11,19 +11,19 @@
       </div>
       
       <div class="process-grid">
-        <div class="step card-animate step-1">
+        <div class="step card-animate">
           <div class="icon-placeholder">1</div>
           <h3>Discovery Sprint (1–2 Weeks)</h3>
           <p>We map your workflows and pinpoint the 3–5 highest-ROI fixes. If we don't find opportunities worth pursuing, you pay nothing.</p>
         </div>
         
-        <div class="step card-animate step-2">
+        <div class="step card-animate">
           <div class="icon-placeholder">2</div>
           <h3>Pilot Build (2–4 Weeks)</h3>
           <p>We design and deploy your first automation — tackling the most painful bottleneck head-on. From day one, it delivers measurable savings.</p>
         </div>
         
-        <div class="step card-animate step-3">
+        <div class="step card-animate">
           <div class="icon-placeholder">3</div>
           <h3>Implementation & Enablement</h3>
           <p>We roll out additional solutions, provide your team with simple guides, and stay on hand for refinement — ensuring long-term ROI.</p>
@@ -40,90 +40,75 @@
 
   .process-layout {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4.2rem; /* 5% larger: 4rem to 4.2rem */
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 4.2rem;
     align-items: start;
   }
 
   .process-text {
     grid-column: 1;
-    grid-row: 1;
   }
 
   .process-text h2 {
-    font-size: 2.625rem; /* 5% larger: 2.5rem to 2.625rem */
+    font-size: clamp(2.1rem, 4.2vw, 2.625rem);
     font-weight: 700;
     color: var(--text-dark);
-    margin-bottom: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
+    margin-bottom: 1.575rem;
     line-height: 1.2;
     text-align: left;
   }
 
   .section-description {
-    font-size: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
+    font-size: clamp(1.26rem, 2.52vw, 1.575rem);
     color: var(--text-dark);
     text-align: left;
-    max-width: 500px;
+    max-width: 400px;
     line-height: 1.6;
   }
 
   .process-grid {
     grid-column: 2;
-    grid-row: 1;
-    position: relative;
-    height: 600px;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.1rem;
   }
 
   .step {
-    position: absolute;
     text-align: left;
-    padding: 2.625rem; /* 5% larger: 2.5rem to 2.625rem */
+    padding: 2.1rem;
     background-color: white;
-    border-radius: 12.6px; /* 5% larger: 12px to 12.6px */
-    box-shadow: 0 6.3px 31.5px rgba(0, 0, 0, 0.1); /* 5% larger shadows */
+    border-radius: 12.6px;
+    box-shadow: 0 6.3px 31.5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 320px;
-    max-width: 320px;
+    width: 100%;
+    max-width: none;
   }
 
   .step:hover {
-    transform: translateY(-8.4px); /* 5% larger: -8px to -8.4px */
-    box-shadow: 0 12.6px 42px rgba(0, 0, 0, 0.15); /* 5% larger shadows */
-  }
-
-  .step-1 {
-    top: 0;
-    left: 0;
-  }
-
-  .step-2 {
-    top: 200px;
-    left: 100px;
-  }
-
-  .step-3 {
-    top: 400px;
-    left: 200px;
+    transform: translateY(-8.4px);
+    box-shadow: 0 12.6px 42px rgba(0, 0, 0, 0.15);
   }
 
   .icon-placeholder {
-    width: 84px; /* 5% larger: 80px to 84px */
-    height: 84px; /* 5% larger: 80px to 84px */
+    width: 84px;
+    height: 84px;
     background: var(--accent-blue);
     color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.1rem; /* 5% larger: 2rem to 2.1rem */
+    font-size: 2.1rem;
     font-weight: 700;
-    margin-bottom: 2.1rem; /* 5% larger: 2rem to 2.1rem */
+    margin-bottom: 2.1rem;
   }
 
   .step h3 {
     text-align: left;
-    margin-bottom: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
+    margin-bottom: 1.575rem;
+    font-size: clamp(1.26rem, 2.52vw, 1.575rem);
+    font-weight: 600;
+    color: var(--text-dark);
   }
 
   .step p {
@@ -131,31 +116,29 @@
     color: var(--text-dark);
     line-height: 1.7;
     margin: 0;
-    font-size: 1.155rem; /* 5% larger: 1.1rem to 1.155rem */
+    font-size: clamp(1.05rem, 2.1vw, 1.155rem);
   }
 
   @media (min-width: 1920px) {
     .step {
-      padding: 3.675rem; /* 5% larger: 3.5rem to 3.675rem */
-      width: 360px;
-      max-width: 360px;
+      padding: 3.675rem;
     }
 
     .icon-placeholder {
-      width: 105px; /* 5% larger: 100px to 105px */
-      height: 105px; /* 5% larger: 100px to 105px */
-      font-size: 2.625rem; /* 5% larger: 2.5rem to 2.625rem */
+      width: 105px;
+      height: 105px;
+      font-size: 2.625rem;
     }
 
     .section-description {
-      font-size: 1.8375rem; /* 5% larger: 1.75rem to 1.8375rem */
+      font-size: 1.8375rem;
     }
   }
 
   @media (max-width: 768px) {
     .process-layout {
       grid-template-columns: 1fr;
-      gap: 2.1rem; /* 5% larger: 2rem to 2.1rem */
+      gap: 2.1rem;
     }
 
     .process-text {
@@ -166,35 +149,22 @@
     .process-grid {
       grid-column: 1;
       grid-row: 2;
-      height: auto;
-      position: relative;
     }
 
     .section-description {
-      font-size: 1.155rem; /* 5% larger: 1.1rem to 1.155rem */
-      margin-bottom: 3.15rem; /* 5% larger: 3rem to 3.15rem */
+      font-size: 1.155rem;
+      margin-bottom: 3.15rem;
     }
 
     .step {
-      position: relative;
-      width: 100%;
-      max-width: none;
-      margin-bottom: 2.1rem; /* 5% larger: 2rem to 2.1rem */
-      padding: 1.575rem; /* 5% larger: 1.5rem to 1.575rem */
-    }
-
-    .step-1,
-    .step-2,
-    .step-3 {
-      top: auto;
-      left: auto;
+      padding: 1.575rem;
     }
 
     .icon-placeholder {
-      width: 47.25px; /* 5% larger: 45px to 47.25px */
-      height: 47.25px; /* 5% larger: 45px to 47.25px */
-      font-size: 1.155rem; /* 5% larger: 1.1rem to 1.155rem */
-      margin-bottom: 1.05rem; /* 5% larger: 1rem to 1.05rem */
+      width: 47.25px;
+      height: 47.25px;
+      font-size: 1.155rem;
+      margin-bottom: 1.05rem;
     }
   }
 </style>
