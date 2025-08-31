@@ -58,19 +58,9 @@ src/
 - **Tablet**: 768px - 1920px  
 - **Desktop**: > 1920px
 
-## 👨‍💻 About Me
-
-I'm a developer exploring modern web technologies and building practical solutions. This project represents my journey into Astro and modern static site generation, combining learning with real-world application.
-
-**Tags**: `#web-development` `#astro` `#static-sites` `#automation` `#uk-sme` `#learning-project`
-
 ## 📄 License
 
 All rights reserved © 2025 kyros
-
-## 🌐 Hosting
-
-This website is hosted on **IONOS** with third-party hosting services, providing reliable performance and uptime for the kyros brand.
 
 ## 🤝 Support
 
