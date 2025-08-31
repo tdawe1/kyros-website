@@ -1,43 +1,136 @@
-# Astro Starter Kit: Minimal
+# kyros Website
 
-```sh
-npm create astro@latest -- --template minimal
+A modern, responsive website for kyros - a UK-based automation agency that helps SMEs cut bottlenecks, save hours, and unlock growth with lightweight, bespoke automation.
+
+## 🚀 Features
+
+- **Modern Design**: Clean, professional layout inspired by high-end tech websites
+- **Responsive**: Optimized for all screen sizes with fluid typography
+- **Performance**: Fast-loading static site built with Astro
+- **SEO Optimized**: Semantic HTML and proper meta tags
+- **Accessibility**: ARIA labels and keyboard navigation support
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Astro](https://astro.build/) - Static site generator
+- **Styling**: CSS with custom properties and responsive design
+- **Fonts**: Inter from Google Fonts
+- **Icons**: Emoji-based icon system
+- **Deployment**: Static hosting ready
+
+## 📁 Project Structure
+
+```
+src/
+├── components/          # Reusable UI components
+│   ├── Header.astro    # Navigation and hero section
+│   ├── WhyUs.astro     # Value propositions
+│   ├── Process.astro   # 3-step methodology
+│   ├── CaseStudies.astro # Success stories
+│   ├── Industries.astro # Industry focus areas
+│   ├── FinalCTA.astro  # Call-to-action section
+│   └── Footer.astro    # Site footer
+├── layouts/            # Page layouts
+│   └── Layout.astro   # Main HTML boilerplate
+├── pages/              # Page components
+│   ├── index.astro    # Homepage
+│   └── discovery.astro # Discovery call landing page
+└── styles/             # Global styles
+    └── global.css     # CSS variables and base styles
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Quick Start
 
-## 🚀 Project Structure
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 
-Inside of your Astro project, you'll see the following folders and files:
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/tdawe1/kyros-website.git
+cd kyros-website
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+### Build for Production
+```bash
+npm run build
+```
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### Preview Production Build
+```bash
+npm run preview
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 🌐 Deployment
 
-## 🧞 Commands
+### Local Development
+```bash
+npm run dev
+# Site available at http://localhost:4321
+```
 
-All commands are run from the root of the project, from a terminal:
+### Production Hosting
+```bash
+npm run build
+# Static files generated in dist/ folder
+# Deploy dist/ contents to any static hosting service
+```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+### Self-Hosting
+```bash
+cd dist
+python -m http.server 8080 --bind 0.0.0.0
+# Site available at http://localhost:8080
+```
 
-## 👀 Want to learn more?
+## 🎨 Customization
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### Colors
+Update CSS variables in `src/styles/global.css`:
+```css
+:root {
+  --bg-light: #F8F9FA;
+  --text-dark: #212529;
+  --accent-blue: #007BFF;
+  --accent-orange: #FF6B35;
+  --accent-purple: #8B5CF6;
+}
+```
+
+### Content
+- **Company Info**: Update `src/components/Header.astro` and `src/components/Footer.astro`
+- **Process Steps**: Modify `src/components/Process.astro`
+- **Case Studies**: Edit `src/components/CaseStudies.astro`
+- **Value Props**: Update `src/components/WhyUs.astro`
+
+## 📱 Responsive Breakpoints
+
+- **Mobile**: < 768px
+- **Tablet**: 768px - 1920px  
+- **Desktop**: > 1920px
+
+## 🔧 Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run astro ...` - Run Astro CLI commands
+
+## 📄 License
+
+All rights reserved © 2024 kyros
+
+## 🤝 Contributing
+
+This is a private project for kyros. For questions or support, contact hello@kyros.com
+
+---
+
+Built with ❤️ using [Astro](https://astro.build/)
